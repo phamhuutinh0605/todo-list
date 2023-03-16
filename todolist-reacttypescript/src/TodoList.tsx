@@ -55,7 +55,7 @@ const Todolist = () => {
   return (
     <div className="text-left w-70">
       <div className="text-left w-50 m-auto">
-        <h1>Todo List</h1>
+        <h1>Todo List - Typescript </h1>
         <input 
           type="text"
           value={newTask}
@@ -74,7 +74,7 @@ const Todolist = () => {
                 onChange={() => toggleComplete(task.id)}
                 style={{ marginRight: 20 }}
               />
-              {task.title}
+              <span style={{ textDecoration: task.completed ? "line-through" : "" }}>{task.title}</span>
               <button onClick={() => deleteTask(task.id)} className="btn btn-danger" style={{ marginLeft: 70, fontSize: 15 }}>Delete</button>
             </li>
           ))}
