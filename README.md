@@ -1,5 +1,3 @@
-# todo-list
-Using version Node: v16.13.0
 {
   "name": "todolist-reactfunctional",
   "version": "0.1.0",
